@@ -2,8 +2,15 @@
 const express = require("express");
 const app = express();
 
+const client = require("./db/client.cjs");
+client.connect();
+
+// app.get("/", (req, res) => {
+//   res.send("Hello World");
+// });
+
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "./dist/index.html");
+  res.sendFile(__dirname + "/dist/index.html");
 });
 
 app.use("/assets", express.static("./dist/assets"));

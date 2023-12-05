@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 const client = require("../db/client.cjs");
-const createRobots = require("../api/createRobots.cjs");
-const createReviewers = require("../api/createReviewers.cjs");
-const createTasks = require("../api/createTasks.cjs");
+const { createRobots } = require("../api/createRobots.cjs");
+const { createReviewers } = require("../api/createReviewers.cjs");
+const { createTasks } = require("../api/createTasks.cjs");
 
 //==================================================================================================
 //==================================================================================================

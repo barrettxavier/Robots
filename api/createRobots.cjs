@@ -15,17 +15,7 @@ const createRobots = async (
     await client.query(
       `
       INSERT INTO robots (name, ModelNumber, Company, ImageURL, MonthsBeforeBreakdown, IsSafeAroundChildren, ReleaseDate)
-      VALUES ($1, $2, $3, $4, $5, $6, $7);
-    `,
-      [
-        name,
-        modelNumber,
-        company,
-        imageURL,
-        monthsBeforeBreakdown,
-        isSafeAroundChildren,
-        releaseDate,
-      ]
+      VALUES ('${name}', '${modelNumber}', '${company}', '${imageURL}', '${monthsBeforeBreakdown}', '${isSafeAroundChildren}', '${releaseDate}')`
     );
     console.log("Robot created successfully");
   } catch (error) {
@@ -33,4 +23,4 @@ const createRobots = async (
   }
 };
 
-module.exports = createRobots;
+module.exports = { createRobots };

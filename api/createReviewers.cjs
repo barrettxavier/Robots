@@ -7,9 +7,7 @@ const createReviewers = async (reviewerEmail, reviewerName, reviewerPhone) => {
     await client.query(
       `
       INSERT INTO reviewer (ReviewerEmail, ReviewerName, ReviewerPhone)
-      VALUES ($1, $2, $3);
-    `,
-      [reviewerEmail, reviewerName, reviewerPhone]
+      VALUES ('${reviewerEmail}', '${reviewerName}', '${reviewerPhone}')`
     );
     console.log("Reviewer created successfully");
   } catch (error) {
@@ -17,4 +15,4 @@ const createReviewers = async (reviewerEmail, reviewerName, reviewerPhone) => {
   }
 };
 
-module.exports = createReviewers;
+module.exports = { createReviewers };

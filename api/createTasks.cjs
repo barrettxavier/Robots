@@ -7,9 +7,8 @@ const createTasks = async (taskName) => {
     await client.query(
       `
       INSERT INTO tasks (taskName)
-      VALUES ($1);
-    `,
-      [taskName]
+      VALUES ('${taskName}')
+    `
     );
     console.log("Task created successfully");
   } catch (error) {
@@ -17,4 +16,4 @@ const createTasks = async (taskName) => {
   }
 };
 
-module.exports = createTasks;
+module.exports = { createTasks };
