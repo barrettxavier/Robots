@@ -22,7 +22,7 @@ const Robots = () => {
 
   const handleClickOnRobot = (event) => {
     const robotName = event.target.innerText;
-    navigate(`/robots/${robotName}`);
+    navigate(`/robotDetails/${robotName}`);
   };
 
   return (
