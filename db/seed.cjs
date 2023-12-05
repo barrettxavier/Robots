@@ -108,7 +108,7 @@ const syncAndSeed = async () => {
       "RoboHelper 2000",
       "PLE-2328",
       "RobotCompany",
-      "https://example.com/robotimage.jpg",
+      "https://cdnb.artstation.com/p/assets/images/images/048/097/779/4k/felix-riano-8.jpg?1649196535",
       24,
       true,
       "2023-03-15"
@@ -117,7 +117,7 @@ const syncAndSeed = async () => {
       "TaskMaster X3",
       "MDW-3144",
       "RobotCompany2",
-      "https://example.com/robotimage2.jpg",
+      "https://cdnb.artstation.com/p/assets/images/images/048/097/745/4k/felix-riano-3.jpg?1649196475",
       36,
       true,
       "2022-07-01"
@@ -126,7 +126,7 @@ const syncAndSeed = async () => {
       "HandyMate Pro",
       "HUY-3016",
       "RobotCompany3",
-      "https://example.com/robotimage3.jpg",
+      "https://cdnb.artstation.com/p/assets/images/images/048/341/235/4k/felix-riano-30.jpg?1649794114",
       30,
       true,
       "2023-01-12"
@@ -135,7 +135,7 @@ const syncAndSeed = async () => {
       "TacticalGuard X7",
       "DVE-1679",
       "RobotCompany4",
-      "https://example.com/robotimage4.jpg",
+      "https://cdnb.artstation.com/p/assets/images/images/048/341/189/4k/felix-riano-25.jpg?1649794051",
       6,
       false,
       "2023-08-27"
@@ -144,7 +144,7 @@ const syncAndSeed = async () => {
       "EcoCleaner Elite",
       "HGN-1346",
       "RobotCompany5",
-      "https://example.com/robotimage5.jpg",
+      "https://cdna.artstation.com/p/assets/images/images/048/341/202/4k/felix-riano-26.jpg?1649794063",
       36,
       true,
       "2022-12-01"
@@ -153,7 +153,7 @@ const syncAndSeed = async () => {
       "TechCompanion Plus",
       "DBS-9954",
       "RobotCompany6",
-      "https://example.com/robotimage6.jpg",
+      "https://cdnb.artstation.com/p/assets/images/images/048/341/181/4k/felix-riano-24.jpg?1649794019",
       6,
       true,
       "2023-04-11"
