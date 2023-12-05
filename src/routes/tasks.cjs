@@ -12,7 +12,6 @@ router.get("/", async (req, res) => {
     res.json(result.rows);
   } catch (error) {
     console.error("Error fetching data from database:", error);
-    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 

@@ -3,12 +3,6 @@ import Robots from "./Robots";
 const Home = () => {
   return (
     <section className="mb-[10rem]">
-      <nav className="mt-4 w-screen h-20 px-20 py-4 transparent-blk-bg flex justify-between">
-        <h1>Bots4Sale</h1>
-        <div>
-          <a href="/">Home</a>
-        </div>
-      </nav>
       <div className="text-white h-[20] pl-6xl">
         <div className="my-[12rem]">
           <h1 className="text-7xl mb-6">
