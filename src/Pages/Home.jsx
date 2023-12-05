@@ -10,7 +10,7 @@ const Home = () => {
       <div>
         <h1>Tasks</h1>
         <div className="flex">
-          <button>Task 1</button>
+          <button className="p-6">Task 1</button>
           <button>Task 1</button>
           <button>Task 1</button>
           <button>Task 1</button>
