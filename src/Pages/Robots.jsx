@@ -42,7 +42,7 @@ const Robots = () => {
             <img
               src={robot.imageurl}
               alt=""
-              className="w-full h-auto transform transition-transform hover:scale-150"
+              className="w-full h-auto transform transition-transform hover:scale-150 hover:translate-y-1 duration-1000"
             />
           </div>
         ))}

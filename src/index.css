@@ -9,10 +9,10 @@
 }
 
 body {
-  background-image: url(https://cdna.artstation.com/p/assets/images/images/004/307/050/4k/ashley-mckenzie-gh-2.jpg?1482257316);
+  /* background-image: url(https://cdna.artstation.com/p/assets/images/images/004/307/050/4k/ashley-mckenzie-gh-2.jpg?1482257316);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   @apply bg-black;
 }
 
