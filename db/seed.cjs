@@ -165,25 +165,11 @@ const syncAndSeed = async () => {
     //==================================================================================================
 
     await createTasks("Package Delivery");
-    await createTasks("Personal Assistance");
-    await createTasks("Grocery Shopping");
-    await createTasks("Environmental Monitoring");
-    await createTasks("Furniture Assembly");
-    await createTasks("Painting");
-    await createTasks("Gardening Assistance");
     await createTasks("Tactical Operations Support");
     await createTasks("Intruder Deterrence");
     await createTasks("Search and Rescue");
-    await createTasks("Advanced Security");
-    await createTasks("Recycling Sorting");
-    await createTasks("Air Quality Monitoring");
-    await createTasks("Energy Efficiency Management");
-    await createTasks("Home Security");
     await createTasks("IT Support");
-    await createTasks("Data Organization");
-    await createTasks("Personalized Task Automation");
     await createTasks("Educational Assistance");
-    await createTasks("Language Translation");
     console.log("created tasks");
   } catch (error) {
     console.error(error);
