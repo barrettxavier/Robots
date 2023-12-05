@@ -6,6 +6,7 @@
   "scripts": {
     "seed:dev": "nodemon ./db/seed.cjs",
     "start:dev": "nodemon server.cjs",
+    "deploy": "node seed.cjs && node server.cjs",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
