@@ -36,7 +36,7 @@ const Home = () => {
         <div className="flex gap-10 justify-center mb-20 flex-wrap">
           {task.map((task) => (
             <div key={task.id}>
-              <a className="btn-primary" href="#">
+              <a className="btn-primary" href="">
                 {task.taskname}
               </a>
             </div>
