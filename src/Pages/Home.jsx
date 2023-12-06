@@ -1,9 +1,26 @@
 import Robots from "./Robots";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+  const [task, setTask] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/tasks");
+        const data = await response.json();
+        console.log(data);
+        setTask(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <section className="mb-[10rem]">
-      <div className="text-white h-[20] pl-6xl">
+      <div className="text-white h-[20] pl-4xl">
         <div className="my-[12rem]">
           <h1 className="text-7xl mb-6">
             Welcome to the Future of Everyday <br /> Living with RoboTech
@@ -16,13 +33,14 @@ const Home = () => {
       </div>
       <div className="transparent-blk-bg w-[800px] mx-auto text-center py-12 mt-8 rounded-md">
         <h1 className="mb-12">Tasks</h1>
-        <div className="flex gap-10 justify-center mb-20">
-          <button className="btn-primary">Task 1</button>
-          <button className="btn-primary">Task 2</button>
-          <button className="btn-primary">Task 3</button>
-          <button className="btn-primary">Task 4</button>
-          <button className="btn-primary">Task 5</button>
-          <button className="btn-primary">Task 6</button>
+        <div className="flex gap-10 justify-center mb-20 flex-wrap">
+          {task.map((task) => (
+            <div key={task.id}>
+              <a className="btn-primary" href="#">
+                {task.taskname}
+              </a>
+            </div>
+          ))}
         </div>
 
         <hr className="w-full" />
